@@ -1,0 +1,28 @@
+pipeline {
+  agent {
+    node {
+      label 'windows'
+     }
+    
+  }
+  stages {
+    stage("checkout") {
+      steps {
+      sh git clone repo x
+      sh git clone repo y
+     
+      }
+    }
+
+    stage('build') {
+      steps {
+    }
+  }
+   stage('deploy') {
+     steps {
+
+
+     }
+   }
+}
+}
